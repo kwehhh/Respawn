@@ -1,19 +1,22 @@
-import Spawn, { Mount } from '@unfocused/spawn';
+import Spawn, { Mount, RainbowText } from '@nurvus/respawn';
 
 const el = Spawn({
+  className: 'respawn',
   children: [
     Spawn({
-      children: 'Your Spawn is ready.',
+      children: RainbowText({
+        text: 'Your Respawn is ready.',
+        intervalSpeed: 150,
+        style: {
+          padding: 20,
+          fontWeight: 'bold',
+          fontSize: '36px',
+          zIndex: 1,
+          display: 'inline-block',
+        },
+      }),
       style: {
-        padding: 20,
-        background: 'rgba(255, 0, 0, .5)',
-        backgroundImage: 'repeating-linear-gradient(45deg,violet,indigo,#00f,green,#ff0,orange,red,#d04343,#3d773d,#d0ae0b,#3961ab,#a22ea2)',
-        fontWeight: 'bold',
-        backgroundSize: '314% 314%',
-        '-webkit-background-clip': 'text',
-        '-webkit-text-fill-color': 'transparent',
-        fontSize: '36px',
-        zIndex: 1
+        // (container styling is applied inside RainbowText via its `style` option)
       }
     }),
   ],

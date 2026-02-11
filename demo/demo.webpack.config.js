@@ -16,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
           'file-loader'
@@ -25,12 +29,12 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@unfocused/spawn': path.resolve(__dirname, '../src/index.js')
+      '@nurvus/respawn': path.resolve(__dirname, '../src/index.js')
     }
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Welcome to the Spawn ENGINE',
+      title: 'Welcome to the Respawn ENGINE',
     })
   ]
 };

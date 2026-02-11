@@ -1,4 +1,4 @@
-import Spawn, { Respawn } from '@unfocused/spawn';
+import Spawn, { Respawn } from '@nurvus/respawn';
 
 export default class RespawnTest {
   constructor() {

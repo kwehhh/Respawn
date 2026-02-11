@@ -1,9 +1,9 @@
-import _ from '@unfocused/treasure-goblin';
+import _ from '@nurvus/treasure-goblin';
 import Mount from './Mount.js';
 
 /**
  * Spawn DOM (The Document Object Model)
- * The Spawn Engine is a stateless virtual DOM generator.
+ * Respawn is a fast, lightweight DOM runtime built around explicit creation and re-creation.
  * @param {object|string} props - props of the Spawn
  * @param {element} [props.mountEl] - Host Element to attach the Spawn.
  * @returns {element} reference of your Spawn

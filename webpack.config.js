@@ -10,12 +10,16 @@ module.exports = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     library: {
-      name: 'Spawm',
+      name: 'Respawn',
       type: 'umd'
     }
   },
   module: {
     rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [

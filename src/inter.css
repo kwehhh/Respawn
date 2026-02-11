@@ -1,0 +1,7 @@
+/* Opt-in typography scope (doesn't override host app unless used) */
+.respawn,
+.nurvus {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-optical-sizing: auto;
+}
+

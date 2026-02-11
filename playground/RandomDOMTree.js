@@ -1,4 +1,4 @@
-import Spawn, { Respawn } from "@unfocused/spawn";
+import Spawn, { Respawn } from "@nurvus/respawn";
 
 const getRandom = (min, max) => {
 return Math.floor((Math.random() * (max - min + 1))  + min);

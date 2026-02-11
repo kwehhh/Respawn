@@ -1,4 +1,4 @@
-import Spawn from '@unfocused/spawn';
+import Spawn from '@nurvus/respawn';
 import RespawnTest from './respawn';
 import InnerHTML from './childrenAsFn';
 import RandomDOMTree from './RandomDOMTree';
@@ -6,11 +6,11 @@ import RandomDOMTree from './RandomDOMTree';
 const mountEl = document.body;
 
 Spawn({
-  className: 'playground',
+  className: 'respawn playground',
   mountEl,
   children: [
     Spawn({
-      children: 'Your Spawn is ready.',
+      children: 'Your Respawn is ready.',
       style: {
         padding: 20,
         background: 'rgba(255, 0, 0, .5)',
